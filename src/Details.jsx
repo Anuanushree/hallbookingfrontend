@@ -58,4 +58,4 @@ function Details({ BASE_URL }) {
     )
 }
 
-export default Details
+export default Details;
