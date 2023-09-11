@@ -60,58 +60,61 @@ function BookingHall({ BASE_URL }) {
     }
 
     return (
-        <div className="form-bg">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-11 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <div className="form-container">
-                            <div className="form-img"></div>
-                            <form className="form-horizontal" onSubmit={handlebook}>
-                                <h3 className="title">Booking Info</h3>
-                                <br /><br /><br />
-                                <div className="form-group">
-                                    <input type="text" className="form-control"
-                                        value={customerName} onChange={(e) => setCustomerName(e.target.value)}
-                                        placeholder="Name of the customer" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="date" className="form-control"
-                                        value={startDate} onChange={(e) => setStartDate(e.target.value)}
-                                        placeholder="select start date" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="date" className="form-control"
-                                        value={endDate} onChange={(e) => setEndDate(e.target.value)}
-                                        placeholder="select end date" />
-                                </div>
-                                <div className="form-group">
-                                    <select className="form-control" value={room} onChange={handlevalue}>
-                                        <option>Select Hall</option>
-                                        {
-                                            hallData.map((data) => (
-                                                (data.status === "none") ? (
+        <>
+            <Navigater />
+            <div className="form-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-11 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <div className="form-container">
+                                <div className="form-img"></div>
+                                <form className="form-horizontal" onSubmit={handlebook}>
+                                    <h3 className="title">Booking Info</h3>
+                                    <br /><br /><br />
+                                    <div className="form-group">
+                                        <input type="text" className="form-control"
+                                            value={customerName} onChange={(e) => setCustomerName(e.target.value)}
+                                            placeholder="Name of the customer" />
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="date" className="form-control"
+                                            value={startDate} onChange={(e) => setStartDate(e.target.value)}
+                                            placeholder="select start date" />
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="date" className="form-control"
+                                            value={endDate} onChange={(e) => setEndDate(e.target.value)}
+                                            placeholder="select end date" />
+                                    </div>
+                                    <div className="form-group">
+                                        <select className="form-control" value={room} onChange={handlevalue}>
+                                            <option>Select Hall</option>
+                                            {
+                                                hallData.map((data) => (
+                                                    (data.status === "none") ? (
 
-                                                    <option key={data._id} value={[data._id, data.hallName]}>
-                                                        {data.hallName}</option>
+                                                        <option key={data._id} value={[data._id, data.hallName]}>
+                                                            {data.hallName}</option>
 
-                                                ) : (
-                                                    <option key={data._id} >No room are available</option>
-                                                )
+                                                    ) : (
+                                                        <option key={data._id} >No room are available</option>
+                                                    )
 
-                                            ))
-                                        }
-                                    </select>
-                                </div>
-                                <div className="space m-4 p-4">
-                                </div>
+                                                ))
+                                            }
+                                        </select>
+                                    </div>
+                                    <div className="space m-4 p-4">
+                                    </div>
 
-                                <button type="submit" className="btn btn-default mb-2">Submit</button>
-                            </form>
+                                    <button type="submit" className="btn btn-default mb-2">Submit</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

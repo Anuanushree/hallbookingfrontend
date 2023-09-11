@@ -44,51 +44,54 @@ function Create({ BASE_URL }) {
     }
 
     return (
-        <div className="form-bg">
-            <div className="container">
-                <div className="row">
-                    <div className="col-lg-11 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
-                        <div className="form-container">
-                            <div className="form-img"></div>
-                            <form className="form-horizontal" onSubmit={handlesubmit}>
-                                <h3 className="title">Registration Info</h3>
-                                <div className="form-group">
-                                    <input type="text" className="form-control"
-                                        value={hallName} onChange={(e) => setName(e.target.value)}
-                                        placeholder="Name of the Hall" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="number" className="form-control"
-                                        value={seat} onChange={(e) => setSeat(e.target.value)}
-                                        placeholder="No of seating" />
-                                </div>
-                                <div className="form-group">
-                                    <select className="form-control" value={amenties} onChange={(e) => setAmenties(e.target.value)}>
-                                        <option>Select Amenties</option>
+        <>
+            <Navigater />
+            <div className="form-bg">
+                <div className="container">
+                    <div className="row">
+                        <div className="col-lg-11 col-lg-offset-2 col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1">
+                            <div className="form-container">
+                                <div className="form-img"></div>
+                                <form className="form-horizontal" onSubmit={handlesubmit}>
+                                    <h3 className="title">Registration Info</h3>
+                                    <div className="form-group">
+                                        <input type="text" className="form-control"
+                                            value={hallName} onChange={(e) => setName(e.target.value)}
+                                            placeholder="Name of the Hall" />
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="number" className="form-control"
+                                            value={seat} onChange={(e) => setSeat(e.target.value)}
+                                            placeholder="No of seating" />
+                                    </div>
+                                    <div className="form-group">
+                                        <select className="form-control" value={amenties} onChange={(e) => setAmenties(e.target.value)}>
+                                            <option>Select Amenties</option>
 
-                                        <option >full Air conditional</option>
-                                        <option >Decoration</option>
-                                        <option >Priests</option>
-                                        <option >Welcome drink</option>
-                                    </select>
-                                </div>
-                                <div className="form-group">
-                                    <input type="number" className="form-control"
-                                        value={price} onChange={(e) => setPrice(e.target.value)}
-                                        placeholder="Price for one hr" />
-                                </div>
-                                <div className="form-group">
-                                    <input type="text" className="form-control"
-                                        value={phn} onChange={(e) => setPhn(e.target.value)}
-                                        placeholder="Phone" />
-                                </div>
-                                <button type="submit" className="btn btn-default">Submit</button>
-                            </form>
+                                            <option >full Air conditional</option>
+                                            <option >Decoration</option>
+                                            <option >Priests</option>
+                                            <option >Welcome drink</option>
+                                        </select>
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="number" className="form-control"
+                                            value={price} onChange={(e) => setPrice(e.target.value)}
+                                            placeholder="Price for one hr" />
+                                    </div>
+                                    <div className="form-group">
+                                        <input type="text" className="form-control"
+                                            value={phn} onChange={(e) => setPhn(e.target.value)}
+                                            placeholder="Phone" />
+                                    </div>
+                                    <button type="submit" className="btn btn-default">Submit</button>
+                                </form>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </>
     )
 }
 

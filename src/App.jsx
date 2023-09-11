@@ -37,7 +37,6 @@ function App() {
         <Route path='/forgotpassword' element={<ForgotPassword BASE_URL={BASE_URL} />} />
         <Route path='/resetpassword/:id' element={<ResetPassword user={user} BASE_URL={BASE_URL} />} />
       </Routes>
-      <Navigater />
       <Routes>
 
         <Route path='/home' element={<Home BASE_URL={BASE_URL} />} />

@@ -22,36 +22,39 @@ function Details({ BASE_URL }) {
         }
     }
     return (
-        <div className='container'>
-            <h>Booked Hall</h>
-            <table className='table table-dark'>
-                <thead>
-                    <tr>
-                        <th>Customer name</th>
-                        <th>Starting-time</th>
-                        <th>Ending time</th>
-                        <th>Hall name</th>
-                    </tr>
-                </thead>
+        <>
+            <Navigater />
+            <div className='container'>
+                <h>Booked Hall</h>
+                <table className='table table-dark'>
+                    <thead>
+                        <tr>
+                            <th>Customer name</th>
+                            <th>Starting-time</th>
+                            <th>Ending time</th>
+                            <th>Hall name</th>
+                        </tr>
+                    </thead>
 
-                <tbody>
+                    <tbody>
 
-                    {
-                        details.map((data) => (
-                            <tr>
-                                <td>{data.length}</td>
-                                <td>{data.customerName}</td>
-                                <td>{data.startDate}</td>
-                                <td>{data.endDate}</td>
-                                <td>{data.room}</td>
-                            </tr>
-                        ))
-                    }
+                        {
+                            details.map((data) => (
+                                <tr>
+                                    <td>{data.length}</td>
+                                    <td>{data.customerName}</td>
+                                    <td>{data.startDate}</td>
+                                    <td>{data.endDate}</td>
+                                    <td>{data.room}</td>
+                                </tr>
+                            ))
+                        }
 
 
-                </tbody>
-            </table>
-        </div>
+                    </tbody>
+                </table>
+            </div>
+        </>
     )
 }
 
