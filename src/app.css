@@ -1,0 +1,182 @@
+.login-body {
+    /* background-image: url('./assets/hall.jpg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: 'Numans', sans-serif;
+
+}
+
+.login-container {
+    height: 100%;
+    align-content: center;
+}
+
+.login-card {
+    height: 500px;
+    margin-top: 120px;
+    margin-bottom: 120px;
+    width: 600px;
+    background-color: rgba(0, 0, 0, 0.5) !important;
+}
+
+
+.login-card-header h3 {
+    color: white;
+}
+
+.login-input-group span {
+    width: 50px;
+    background-color: #FFC312;
+    padding: 10px;
+    align-content: center;
+    color: black;
+    border: 0 !important;
+    margin: 10px;
+}
+
+.login-input:focus {
+
+    outline: 0 0 0 0 !important;
+    box-shadow: 0 0 0 0 !important;
+
+}
+
+.login-input {
+    height: 50px;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.login_btn {
+    color: black;
+    background-color: #FFC312;
+    width: 100px;
+    align-items: center;
+    align-content: center;
+    margin-left: 40%;
+    margin-top: 50px;
+}
+
+.login_btn:hover {
+    color: black;
+    background-color: white;
+}
+
+/* create */
+
+.form-container {
+    font-family: 'Nunito', sans-serif;
+    font-size: 0;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+.form-container .form-img {
+    background-image: url('../src/assets/bg.jpg');
+    background-repeat: no-repeat;
+    background-position: center center;
+    width: 50%;
+    height: 524px;
+    vertical-align: top;
+    display: inline-block;
+}
+
+.form-container .form-horizontal {
+    background: #000;
+    width: 50%;
+    padding: 33px 35px 32.5px;
+    display: inline-block;
+}
+
+.title {
+    color: #fff;
+    font-size: 25px;
+    font-weight: 400;
+    margin: 0 0 35px;
+}
+
+.form-container .form-horizontal .form-group {
+    margin: 0 0 10px;
+}
+
+.form-container .form-horizontal .form-control {
+    color: #ccc;
+    background: transparent;
+    padding: 5px 0;
+    margin-bottom: 33px;
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 0;
+}
+
+.form-container .form-horizontal .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.form-container .form-horizontal .form-control::placeholder {
+    color: #ccc;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.form-container .form-horizontal .form-group select.form-control option {
+    color: #000;
+    background: #fff;
+}
+
+.space {
+    margin: 20px;
+    bottom: 1px;
+}
+
+.form-container .form-horizontal .btn {
+    color: #fff;
+    background: #4dae3c;
+    font-size: 18px;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    padding: 8px 25px;
+    border: none;
+    transition: all .4s ease;
+}
+
+.form-container .form-horizontal .btn:hover {
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, .6);
+}
+
+.form-container .form-horizontal .btn:focus {
+    outline: none;
+}
+
+@media only screen and (max-width:576px) {
+    .form-container .form-img {
+        width: 100%;
+        height: 400px;
+    }
+
+    .form-container .form-horizontal {
+        width: 100%;
+    }
+}
+
+
+/* bg */
+.body {
+    background-image: url("../src/assets/front.jpg");
+
+   
+    background-repeat: no-repeat;
+
+    background-size: cover;
+
+   
+    background-position: center;
+    height: 100vh;
+}
