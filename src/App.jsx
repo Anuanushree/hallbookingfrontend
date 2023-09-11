@@ -7,7 +7,7 @@ import axios from 'axios';
 import ForgotPassword from './components/forgot/forgot';
 import ResetPassword from './components/forgot/reset';
 import SignIn from './components/login/SignIn';
-import SignUp from './components/login/signUp';
+import SignUp from './components/login/SignUp';
 import './app.css'
 import Home from './components/Home';
 import Navigater from './nav/nav';
