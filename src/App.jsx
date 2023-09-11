@@ -13,7 +13,7 @@ import Home from './components/Home';
 import Navigater from './nav/nav';
 import Create from './components/create';
 import BookingHall from './components/bookingHall';
-import Details from './Details';
+import Details from './components/Details';
 
 
 function App() {

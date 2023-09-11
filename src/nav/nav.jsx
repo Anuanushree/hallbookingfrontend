@@ -13,7 +13,7 @@ function Navigater() {
     return (
         <Navbar expand="lg" className="bg-body-tertiary" id='nav-bg'>
             <Container>
-                <Navbar.Brand href="/">Home</Navbar.Brand>
+                <Navbar.Brand href="/">logout</Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="me-auto">

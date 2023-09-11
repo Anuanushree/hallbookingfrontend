@@ -1,6 +1,6 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
-
+import Navigater from '../nav/nav';
 
 function BookingHall({ BASE_URL }) {
     const [customerName, setCustomerName] = useState('');

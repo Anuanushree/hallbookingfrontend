@@ -1,6 +1,5 @@
-import React from 'react'
-import SimpleImageSlider from "react-simple-image-slider";
-import hall from '../assets/hall.jpg'
+import React from 'react';
+import Navigater from '../nav/nav';
 function Home() {
     const sliderImages = [
 

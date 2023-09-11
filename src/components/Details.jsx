@@ -1,5 +1,6 @@
 import axios from 'axios'
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
+import Navigater from '../nav/nav';
 
 function Details({ BASE_URL }) {
     const [details, setDetails] = useState([]);
@@ -24,7 +25,7 @@ function Details({ BASE_URL }) {
     return (
         <>
             <Navigater />
-            <div className='container'>
+            <div className='container body'>
                 <h>Booked Hall</h>
                 <table className='table table-dark'>
                     <thead>
@@ -40,9 +41,9 @@ function Details({ BASE_URL }) {
 
                         {
                             details.map((data) => (
-                                <tr>
-                                    <td>{data.length}</td>
-                                    <td>{data.customerName}</td>
+                                <tr >
+
+                                    <td key={data._id}>{data.customerName}</td>
                                     <td>{data.startDate}</td>
                                     <td>{data.endDate}</td>
                                     <td>{data.room}</td>
