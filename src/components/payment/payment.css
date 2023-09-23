@@ -14,8 +14,7 @@
     min-height: 100vh;
     background-color:white;
     background-image: url('../../assets/hall.jpg');
-
-    padding: 30px 10px;
+    background-size: 100% 100%;
 }
 .pay{
     width:400px;
@@ -23,7 +22,7 @@
     border: none;
 }
 .payment-card {
-    max-width: 69vh;
+    max-width: 70vh;
     margin: auto;
     color: black;
     border-radius: 20 px;
