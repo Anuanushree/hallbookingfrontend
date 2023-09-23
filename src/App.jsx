@@ -14,6 +14,7 @@ import Navigater from './nav/nav';
 import Create from './components/create';
 import BookingHall from './components/bookingHall';
 import Details from './components/Details';
+import Payment from './components/payment/payment';
 
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
       <Routes>
 
         <Route path='/home' element={<Home BASE_URL={BASE_URL} />} />
+        <Route path='/payment' element={<Payment BASE_URL={BASE_URL} />} />
         <Route path='/create' element={<Create BASE_URL={BASE_URL} />} />
         <Route path='/booking' element={<BookingHall BASE_URL={BASE_URL} />} />
         <Route path='/list' element={<Details BASE_URL={BASE_URL} />} />

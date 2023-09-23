@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import Navigater from '../nav/nav';
+import { useNavigate } from 'react-router-dom';
 
 function BookingHall({ BASE_URL }) {
     const [customerName, setCustomerName] = useState('');
@@ -11,7 +12,7 @@ function BookingHall({ BASE_URL }) {
 
     const [hallId, setHallId] = useState('')
 
-
+    const navigator = useNavigate();
     const token = localStorage.getItem('token');
     const headers = {
         headers: { "authorization": `${token}` }
@@ -54,6 +55,7 @@ function BookingHall({ BASE_URL }) {
         try {
             const response = await axios.post(`${BASE_URL}/user/booking`, bookdata, headers);
             console.log(response.data);
+            navigator('/payment')
         } catch (error) {
             console.log("Error in booking data :", error)
         }
@@ -97,7 +99,7 @@ function BookingHall({ BASE_URL }) {
                                                             {data.hallName}</option>
 
                                                     ) : (
-                                                        <option key={data._id} >No room are available</option>
+                                                        <></>
                                                     )
 
                                                 ))

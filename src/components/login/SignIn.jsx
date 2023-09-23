@@ -63,11 +63,13 @@ function SignIn({ BASE_URL }) {
                                 <div className="form-group">
                                     <button type="submit" onClick={handleSignIn} className="btn float-right login_btn" >login</button>
                                     <p className='text-center error' >{error}</p>
-                                    
+
                                 </div>
                             </form>
                         </div>
                         <div className="card-footer">
+                            <p className='text-white'>usermail : user@gmail.com</p>
+                            <p className='text-white'>password :user123</p>
                             <div className="d-flex justify-content-center links">
                                 Don't have an account?<a href="/signup">Sign Up</a>
                             </div>
