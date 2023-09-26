@@ -54,7 +54,7 @@ function Payment({ BASE_URL }) {
                             </div>
                             <div className="col-12">
                                 <div className="btn btn-primary mb-3">
-                                    <span className="ps-3" ><button type='submit' className='bg-primary pay'>Pay</button> </span>
+                                  <button className="ps-3 btn btn-primary" type='submit'>Pay </button>
                                     <span className="fas fa-arrow-right"></span>
                                 </div>
                             </div>
